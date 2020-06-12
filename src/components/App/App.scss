@@ -1,0 +1,12 @@
+@import "src/components/header/header";
+@import "src/components/footer/footer";
+
+.main {
+	min-height: 100%;
+
+	&__content {
+		flex-shrink: 0!important;
+		min-height: calc(100vh - 60px);
+		padding-top: 56px;
+	}
+}
