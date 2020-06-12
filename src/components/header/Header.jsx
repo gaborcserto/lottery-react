@@ -1,14 +1,12 @@
 import React from 'react';
-import {AppBar, Typography} from '@material-ui/core';
-
+import { Navbar } from 'react-bootstrap';
+import { FaReact } from "react-icons/fa";
 class Header extends React.Component {
 	render() {
 		return (
-			<AppBar position="fixed" className="header">
-				<Typography className="title" variant="h6" noWrap>
-					Header component
-				</Typography>
-			</AppBar>
+			<Navbar bg="dark" variant="dark" fixed="top">
+				<Navbar.Brand href="#home"><FaReact /> Header component</Navbar.Brand>
+			</Navbar>
 		);
 	}
 }

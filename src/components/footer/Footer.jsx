@@ -1,12 +1,11 @@
 import React from 'react';
-import {Box} from '@material-ui/core';
 
 class Footer extends React.Component {
 	render() {
 		return (
-			<Box className="footer" width={1}>
+			<footer className="footer bg-light">
 				<p>Footer component</p>
-			</Box>
+			</footer>
 		);
 	}
 }
