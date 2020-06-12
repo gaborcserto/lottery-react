@@ -4,6 +4,7 @@ import './App.scss';
 
 import Header from '../header/Header.jsx';
 import Footer from '../footer/Footer.jsx';
+import Table from '../tableComponent/TableComponent.jsx';
 
 class App extends React.Component {
 	render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
 				<Header/>
 				<div className="main__content">
 					<h1>Content</h1>
+					<Table/>
 				</div>
 				<Footer/>
 			</Container>
