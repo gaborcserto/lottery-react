@@ -1,7 +1,7 @@
 import React from 'react';
 import {Table} from 'react-bootstrap';
 
-class DataTable extends React.Component {
+class dataTable extends React.Component {
 	render() {
 		return (
 			<Table striped bordered hover size="sm">
@@ -38,4 +38,4 @@ class DataTable extends React.Component {
 	}
 }
 
-export default DataTable;
+export default dataTable;

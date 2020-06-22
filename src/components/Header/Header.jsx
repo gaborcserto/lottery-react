@@ -6,7 +6,7 @@ class Header extends React.Component {
 		return (
 			<Navbar bg="dark" variant="dark" fixed="top" expand="lg">
 				<Navbar.Brand href="#home"><FaChartBar /></Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				{/*<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="mr-auto">
 						<Nav.Link href="#home">Kezdőlap</Nav.Link>
@@ -14,7 +14,7 @@ class Header extends React.Component {
 						<Nav.Link href="#link">Hatos lottó</Nav.Link>
 						<Nav.Link href="#link">Skandináv lottó</Nav.Link>
 					</Nav>
-				</Navbar.Collapse>
+				</Navbar.Collapse>*/}
 			</Navbar>
 		);
 	}

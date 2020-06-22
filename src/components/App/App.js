@@ -4,18 +4,24 @@ import './App.scss';
 
 import Header from '../Header/Header.jsx';
 import Footer from '../Footer/Footer.jsx';
-import Table from '../TableComponent/TableComponent.jsx';
+import DataTable from '../DataTable/DataTable.jsx';
+import LottoNumbersGenerator from '../LottoNumbersGenerator/LottoNumbersGenerator';
 
 class App extends React.Component {
+	state = {
+		lottoFiveNumbers: ''
+	}
+
 	render() {
 		return (
 			<Container fluid="md" className="main">
-				<Header/>
+				<Header />
 				<div className="main__content">
 					<h1>Content</h1>
-					<Table/>
+					<DataTable />
+					<LottoNumbersGenerator type="5" highest="90" />
 				</div>
-				<Footer/>
+				<Footer />
 			</Container>
 		);
 	}
