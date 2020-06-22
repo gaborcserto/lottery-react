@@ -2,9 +2,9 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import './App.scss';
 
-import Header from '../header/Header.jsx';
-import Footer from '../footer/Footer.jsx';
-import Table from '../tableComponent/TableComponent.jsx';
+import Header from '../Header/Header.jsx';
+import Footer from '../Footer/Footer.jsx';
+import Table from '../TableComponent/TableComponent.jsx';
 
 class App extends React.Component {
 	render() {
