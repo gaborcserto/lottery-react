@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar /*, Nav*/ } from 'react-bootstrap';
 import { FaChartBar} from "react-icons/fa";
 class Header extends React.Component {
 	render() {
