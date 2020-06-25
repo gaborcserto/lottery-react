@@ -42,8 +42,8 @@ class App extends React.Component {
 				{this.state.RandomLottoNumbersData.map((lotto, index) => {
 					return (
 						<Col key={index} className="randomNumbers  text-center">
-							<Button onClick={() => this.clickHandler(lotto.type, lotto.highest)}>
-								<Badge variant="light">{lotto.type}</Badge> szám generálása
+							<Button variant="outline-dark" onClick={() => this.clickHandler(lotto.type, lotto.highest)}>
+								<Badge variant="dark">{lotto.type}</Badge> szám generálása
 							</Button>
 							<RandomLottoNumbers numbers={lotto.numbers} />
 						</Col>
