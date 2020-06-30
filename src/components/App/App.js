@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Badge, Container, Row, Col} from 'react-bootstrap';
+import {Container, Col, Row} from 'react-bootstrap';
 import './App.scss';
 
 import Header from '../Header/Header.jsx';
@@ -40,12 +40,13 @@ class App extends React.Component {
 		let randomLottoNumbers = (
 			<Row>
 				{this.state.RandomLottoNumbersData.map((lotto, index) => {
+					let colMd = 6;
+					if (index === 2) {
+						colMd = { span: 6, offset: 3 };
+					}
 					return (
-						<Col key={index} className="randomNumbers  text-center">
-							<Button variant="outline-dark" onClick={() => this.clickHandler(lotto.type, lotto.highest)}>
-								<Badge variant="dark">{lotto.type}</Badge> szám generálása
-							</Button>
-							<RandomLottoNumbers numbers={lotto.numbers} />
+						<Col sm={12} md={colMd} lg={{span: 4, offset: 0 }} key={index}>
+							<RandomLottoNumbers numbers={lotto.numbers} type={lotto.type} clicked={() => this.clickHandler(lotto.type, lotto.highest)}/>
 						</Col>
 					)
 				})}

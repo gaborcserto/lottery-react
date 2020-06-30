@@ -1,0 +1,24 @@
+.randomNumbers {
+	background: $white;
+	border: 1px solid $grey-1;
+	border-radius: 4px;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+	margin-bottom: 16px;
+	padding: 0 0 16px;
+
+	&__numbers {
+		padding-top: 16px;
+
+		&__item {
+			background: $grey-2;
+			border: 1px solid $grey-1;
+			border-radius: 4px;
+			color: $grey-4;
+			display: inline-block;
+			height: 2em;
+			line-height: calc(2em - 2px);
+			margin: 2.5px;
+			width: 2em;
+		}
+	}
+}

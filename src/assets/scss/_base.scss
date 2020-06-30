@@ -1,0 +1,3 @@
+.btn-lightgreen {
+	@include btn-variant($green-1, $white);
+}
