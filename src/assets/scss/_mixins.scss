@@ -2,6 +2,7 @@
 @mixin btn-variant ($background, $color) {
 	background-color: $background;
 	border-color: $background;
+	box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
 	color: $color;
 
 	&.focus,

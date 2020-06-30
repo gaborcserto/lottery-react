@@ -2,9 +2,15 @@
 	background: $green-1;
 	color: $white;
 	height: 60px;
+	font-size: 25px;
 	left: 0;
 	padding: 10px;
 	position: absolute;
 	text-align: center;
 	width: 100%;
+
+	&__icon {
+		display: inline-block;
+		margin: 0 10px;
+	}
 }

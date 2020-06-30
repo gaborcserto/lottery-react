@@ -12,11 +12,15 @@ const randomLottoNumbers = props =>{
 
 	return (
 		<div className="randomNumbers  text-center">
-			<Button block variant="lightgreen" onClick={props.clicked}>
-				{props.type} szám generálása
-			</Button>
+			<div className={`randomNumbers__img type-${props.type}`} />
 			<div className="randomNumbers__numbers">
 				{items}
+			</div>
+
+			<div className="randomNumbers__button">
+				<Button variant="lightgreen" onClick={props.clicked}>
+					{props.type} szám generálása
+				</Button>
 			</div>
 		</div>
 	)
