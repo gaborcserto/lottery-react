@@ -2,10 +2,10 @@ import React from 'react';
 import {Container, Col, Row} from 'react-bootstrap';
 import './App.scss';
 
-import Header from '../Header/Header.jsx';
-import Footer from '../Footer/Footer.jsx';
+import Header from '../../components/Header/Header.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 import NumberGenerator from "../../utils/NumberGenerator";
-import RandomLottoNumbers from '../RandomLottoNumbers/RandomLottoNumbers'
+import RandomLottoNumbers from '../../components/LottoNumbers/RandomLottoNumbers/RandomLottoNumbers'
 
 class App extends React.Component {
 	state = {
@@ -40,20 +40,17 @@ class App extends React.Component {
 		this.setState({ RandomLottoNumbersData: RandomLottoNumbersData })
 	}
 
-	lítestLottoNumbersHandler = (type) => {
-
-	}
 
 	render() {
 		let randomLottoNumbers = (
 			<Row>
 				{this.state.RandomLottoNumbersData.map((lotto, index) => {
-					let colMd = 6;
+					let colType = 6;
 					if (index === 2) {
-						colMd = { span: 6, offset: 3 };
+						colType = { span: 6, offset: 3 };
 					}
 					return (
-						<Col sm={12} md={colMd} lg={{span: 4, offset: 0 }} key={index}>
+						<Col xs={12} sm={colType} lg={{span: 4, offset: 0 }} key={index}>
 							<RandomLottoNumbers
 								numbers={lotto.numbers}
 								type={lotto.type}
@@ -69,7 +66,8 @@ class App extends React.Component {
 			<Container fluid="md" className="main">
 				<Header />
 				<div className="main__content">
-					<h2>Utoljára kisorsolt nyerőszámok</h2>
+					<h2>Korábbi nyerőszámok</h2>
+					<div className="previousLottoNumbers" />
 					<h2>Lottó számok generálása</h2>
 					{randomLottoNumbers}
 				</div>

@@ -1,2 +1,20 @@
 .header {
+	.navbar-brand {
+		color: $green-1;
+		text-shadow: 0 4px 3px rgba(0,0,0,.4);
+
+		svg {
+			filter: drop-shadow(0 4px 3px rgba(0,0,0,.4));
+		}
+
+		&.focus,
+		&:hover,
+		&:focus {
+			color: darken($green-1,8%);
+		}
+
+		&:active {
+			color: darken($green-1,25%);
+		}
+	}
 }

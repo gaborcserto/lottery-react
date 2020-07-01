@@ -19,7 +19,7 @@ const randomLottoNumbers = props =>{
 
 			<div className="randomNumbers__button">
 				<Button variant="lightgreen" onClick={props.clicked}>
-					{props.type} szám generálása
+					lottó szám generálás
 				</Button>
 			</div>
 		</div>

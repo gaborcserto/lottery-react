@@ -1,9 +1,9 @@
 @import "../../assets/scss/colors";
 @import "../../assets/scss/mixins";
 @import "../../assets/scss/base";
-@import "../Header/Header";
-@import "../Footer/Footer";
-@import "../RandomLottoNumbers/RandomLottoNumbers";
+@import "../../components/Header/Header";
+@import "../../components/Footer/Footer";
+@import "../../components/LottoNumbers/RandomLottoNumbers/RandomLottoNumbers";
 
 .main {
 	min-height: 100%;
