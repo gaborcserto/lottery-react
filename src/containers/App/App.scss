@@ -4,6 +4,7 @@
 @import "../../components/Header/Header";
 @import "../../components/Footer/Footer";
 @import "../../components/LottoNumbers/RandomLottoNumbers/RandomLottoNumbers";
+@import "../../components/LottoNumbers/LatestLottoNumbers/LatestLottoNumbers";
 
 .main {
 	min-height: 100%;
@@ -12,38 +13,5 @@
 		flex-shrink: 0!important;
 		min-height: calc(100vh - 60px);
 		padding-top: 56px;
-	}
-}
-
-
-.previousLottoNumbers {
-	padding: 16px 0;
-
-	.list-group {
-		box-shadow: 0 0 33px rgba(0,0,0,.2);
-
-		&-item {
-			border-left: 0;
-			border-right: 0;
-
-			&:first-child {
-				border-top: 0;
-			}
-
-			&:last-child {
-				border-bottom: 0;
-			}
-
-			&.active {
-				background-color: $green-1;
-				border-color: $green-1;
-				color: $white;
-
-				&:hover {
-					background-color: darken($green-1, 8%);
-					border-color: darken($green-1, 8%);
-				}
-			}
-		}
 	}
 }
