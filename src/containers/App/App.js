@@ -52,9 +52,7 @@ class App extends React.Component {
 				<div className="main__content">
 					<LatestLottoNumbers />
 					<h2>Lottó számok generálása</h2>
-					<Row>
-						{randomLottoNumbers}
-					</Row>
+					<Row className="randomNumbers">{randomLottoNumbers}</Row>
 				</div>
 				<Footer />
 			</Container>
