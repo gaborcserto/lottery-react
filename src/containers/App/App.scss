@@ -3,8 +3,8 @@
 @import "../../assets/scss/base";
 @import "../../components/Header/Header";
 @import "../../components/Footer/Footer";
-@import "../../components/LottoNumbers/RandomLottoNumbers/RandomLottoNumbers";
-@import "../../components/LottoNumbers/LatestLottoNumbers/LatestLottoNumbers";
+@import "../../components/RandomLottoNumbers/RandomLottoNumbers";
+@import "../../components/LatestLottoNumbers/LatestLottoNumbers";
 
 .main {
 	min-height: 100%;

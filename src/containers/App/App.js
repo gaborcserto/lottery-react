@@ -1,12 +1,12 @@
 import React from 'react';
-import {Container, Col, Row} from 'react-bootstrap';
+import {Container, Row} from 'react-bootstrap';
 import './App.scss';
 
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import NumberGenerator from '../../utils/NumberGenerator';
-import RandomLottoNumbers from '../../components/LottoNumbers/RandomLottoNumbers/RandomLottoNumbers';
-import LatestLottoNumbers from '../../components/LottoNumbers/LatestLottoNumbers/LatestLottoNumbers';
+import RandomLottoNumbers from '../../components/RandomLottoNumbers/RandomLottoNumbers';
+import LatestLottoNumbers from '../../components/LatestLottoNumbers/LatestLottoNumbers';
 
 class App extends React.Component {
 	state = {
@@ -41,27 +41,10 @@ class App extends React.Component {
 		this.setState({ RandomLottoNumbersData: RandomLottoNumbersData })
 	}
 
-
 	render() {
-		let randomLottoNumbers = (
-			<Row>
-				{this.state.RandomLottoNumbersData.map((lotto, index) => {
-					let colType = 6;
-					if (index === 2) {
-						colType = { span: 6, offset: 3 };
-					}
-					return (
-						<Col xs={12} sm={colType} lg={{span: 4, offset: 0 }} key={index}>
-							<RandomLottoNumbers
-								numbers={lotto.numbers}
-								type={lotto.type}
-								clicked={() => this.clickHandler(lotto.type, lotto.highest)}
-							/>
-						</Col>
-					)
-				})}
-			</Row>
-		);
+		let randomLottoNumbers = <RandomLottoNumbers
+					randomLottoNumbersData={this.state.RandomLottoNumbersData}
+					clicked={this.clickHandler} />;
 
 		return (
 			<Container fluid="md" className="main">
@@ -69,7 +52,9 @@ class App extends React.Component {
 				<div className="main__content">
 					<LatestLottoNumbers />
 					<h2>Lottó számok generálása</h2>
-					{randomLottoNumbers}
+					<Row>
+						{randomLottoNumbers}
+					</Row>
 				</div>
 				<Footer />
 			</Container>

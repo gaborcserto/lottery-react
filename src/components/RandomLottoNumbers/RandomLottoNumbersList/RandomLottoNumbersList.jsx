@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button} from "react-bootstrap";
 
-const randomLottoNumbers = props =>{
+const randomLottoNumbersList = props => {
 	const items = [];
 
 	if(props.numbers) {
@@ -18,7 +18,7 @@ const randomLottoNumbers = props =>{
 			</div>
 
 			<div className="randomNumbers__button">
-				<Button variant="lightgreen" onClick={props.clicked}>
+				<Button variant="lightgreen" onClick={props.click}>
 					lottó szám generálás
 				</Button>
 			</div>
@@ -26,4 +26,4 @@ const randomLottoNumbers = props =>{
 	)
 }
 
-export default randomLottoNumbers;
+export default randomLottoNumbersList;
