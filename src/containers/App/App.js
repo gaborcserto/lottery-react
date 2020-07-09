@@ -27,13 +27,13 @@ class App extends React.Component {
 					<h2>Lottó számok generálása</h2>
 					<Row className="randomNumbers">
 						<Col xs={12} sm={6} lg={{span: 4, offset: 0 }}>
-							<RandomLottoNumbers highest="90" type="5" />;
+							<RandomLottoNumbers highest="90" type="5" />
 						</Col>
 						<Col xs={12} sm={{span: 6, offset: 3}} lg={{span: 4, offset: 0 }}>
-							<RandomLottoNumbers highest="45" type="6" />;
+							<RandomLottoNumbers highest="45" type="6" />
 						</Col>
 						<Col xs={12} sm={6} lg={{span: 4, offset: 0 }}>
-							<RandomLottoNumbers highest="35" type="7" />;
+							<RandomLottoNumbers highest="35" type="7" />
 						</Col>
 					</Row>
 				</div>
