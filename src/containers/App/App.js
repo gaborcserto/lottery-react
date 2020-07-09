@@ -1,58 +1,41 @@
 import React from 'react';
-import {Container, Row} from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import './App.scss';
 
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
-import NumberGenerator from '../../utils/NumberGenerator';
+//import NumberGenerator from '../../utils/NumberGenerator';
 import RandomLottoNumbers from '../../components/RandomLottoNumbers/RandomLottoNumbers';
 import LatestLottoNumbers from '../../components/LatestLottoNumbers/LatestLottoNumbers';
 
+
 class App extends React.Component {
 	state = {
-		RandomLottoNumbersData: [
-			{ type: 5, highest: 90, numbers: '' },
-			{ type: 6, highest: 45, numbers: '' },
-			{ type: 7, highest: 35, numbers: '' }
-		],
-		LatestLottoNumbersData: [
-			{ type: 5, latestNumbers: '' },
-			{ type: 6, latestNumbers: '' },
-			{ type: 7, latestNumbers: '' }
+		LottoNumbersData: [
+			{ type: 5, highest: 90, latestNumbers: '' },
+			{ type: 6, highest: 45, latestNumbers: '' },
+			{ type: 7, highest: 35, latestNumbers: '' }
 		]
 	}
 
-	clickHandler = (type, highest) => {
-		const generatedNumbers = new NumberGenerator(type, highest);
-
-		const lottoDataIndex = this.state.RandomLottoNumbersData.findIndex(l => {
-			return l.type === type;
-		});
-
-		const lotto = {
-			...this.state.RandomLottoNumbersData[lottoDataIndex]
-		};
-
-		lotto.numbers = generatedNumbers.generate();
-
-		const RandomLottoNumbersData = [...this.state.RandomLottoNumbersData];
-		RandomLottoNumbersData[lottoDataIndex] = lotto;
-
-		this.setState({ RandomLottoNumbersData: RandomLottoNumbersData })
-	}
-
 	render() {
-		let randomLottoNumbers = <RandomLottoNumbers
-					randomLottoNumbersData={this.state.RandomLottoNumbersData}
-					clicked={this.clickHandler} />;
-
 		return (
 			<Container fluid="md" className="main">
 				<Header />
 				<div className="main__content">
 					<LatestLottoNumbers />
 					<h2>Lottó számok generálása</h2>
-					<Row className="randomNumbers">{randomLottoNumbers}</Row>
+					<Row className="randomNumbers">
+						<Col xs={12} sm={6} lg={{span: 4, offset: 0 }}>
+							<RandomLottoNumbers highest="90" type="5" />;
+						</Col>
+						<Col xs={12} sm={{span: 6, offset: 3}} lg={{span: 4, offset: 0 }}>
+							<RandomLottoNumbers highest="45" type="6" />;
+						</Col>
+						<Col xs={12} sm={6} lg={{span: 4, offset: 0 }}>
+							<RandomLottoNumbers highest="35" type="7" />;
+						</Col>
+					</Row>
 				</div>
 				<Footer />
 			</Container>
