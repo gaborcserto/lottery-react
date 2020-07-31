@@ -30,6 +30,12 @@ const App = () => {
 		queryType: 'skandi'
 	});
 
+	const suspense = (
+		<div className="main__content">
+			<Loading />
+		</div>
+	);
+
 	useEffect(() => {
 		if (lottoFive.response !== null) {
 			setLottoFiveAllData(lottoFive.response);
@@ -46,7 +52,7 @@ const App = () => {
 		<React.Fragment>
 			<Header/>
 			<Container className="main">
-				<Suspense fallback={<Loading />}/>
+				<Suspense fallback={suspense}/>
 				<Switch>
 					<Route path="/otos">
 						<LottoFivePage data={lottoFiveAllData}/>

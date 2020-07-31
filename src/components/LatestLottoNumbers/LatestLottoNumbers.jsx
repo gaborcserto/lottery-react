@@ -8,7 +8,6 @@ const latestLottoNumbers = ({data, type}) =>{
 	let content = <Loading />;
 
 	const setText = (date, week) => {
-		console.log(date);
 		return (
 			<React.Fragment>
 				<h5>A {week}. héten kisorsolt nyerőszámok:</h5>
@@ -16,7 +15,6 @@ const latestLottoNumbers = ({data, type}) =>{
 			</React.Fragment>
 		);
 	}
-
 
 	if(data) {
 		text = setText(data.date, data.week);
