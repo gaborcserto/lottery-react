@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import Box from '../../components/Box';
 
-export default function RandomLottoNumbers(props) {
+const RandomLottoNumbers = props => {
 	const [randomNumbers, setRandomNumbers] = useState([]);
 	const items = [];
 
@@ -35,13 +36,22 @@ export default function RandomLottoNumbers(props) {
 	}
 
 	if(randomNumbers.length > 0) {
-		randomNumbers.map((number, index) => items.push(<div className="randomNumbers__box__numbers__item" key={index}>{number}</div>));
+		randomNumbers.map((number, index) => items.push(<div className="box__numbers__item" key={index}>{number}</div>));
 	} else {
-		for(let i = 0; i < props.type; i++) items.push( <div className="randomNumbers__box__numbers__item" key={i}>?</div>);
+		for(let i = 0; i < props.type; i++) items.push( <div className="box__numbers__item" key={i}>?</div>);
 	}
 
-	return (
-		<div className="randomNumbers__box  text-center">
+	const button = (
+		<Button variant="lightgreen" onClick={clickHandler}>
+			lottó szám generálás
+		</Button>
+	);
+
+	return <Box type={props.type} items={items} button={button}/>
+}
+
+export default RandomLottoNumbers;
+/*<div className="randomNumbers__box  text-center">
 			<div className={`randomNumbers__box__img type-${props.type}`} />
 			<div className="randomNumbers__box__numbers">
 				{items}
@@ -52,6 +62,4 @@ export default function RandomLottoNumbers(props) {
 					lottó szám generálás
 				</Button>
 			</div>
-		</div>
-	)
-}
+		</div>*/

@@ -1,5 +1,8 @@
 .header {
-	box-shadow: 0 0 33px rgba(0,0,0,.2);
+	box-shadow: 0 1px 1px rgba($black, .08),
+	0 2px 2px rgba($black, .12),
+	0 4px 4px rgba($black, .16),
+	0 8px 8px rgba($black, .20);
 
 	.navbar-brand {
 		color: $green-1;
@@ -12,6 +15,63 @@
 
 		&:active {
 			color: darken($green-1,25%);
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		.navbar-toggler {
+			border: 0;
+			color: $green-1;
+			float: right;
+			margin: 0;
+			outline: none;
+			padding: 0;
+			position: relative;
+			z-index: 101;
+			width: 40px;
+
+			&:after,
+			&:before,
+			& div {
+				background-color: $green-1;
+				border-radius: 3px;
+				content: '';
+				display: block;
+				height: 3px;
+				margin: 7px 0;
+				transition: all .2s ease-in-out;
+			}
+
+			&.open {
+				&:before {
+					transform: translateY(8px) rotate(135deg);
+				}
+
+				&:after {
+					transform: translateY(-12px) rotate(-135deg);
+				}
+
+				div {
+					transform: scale(0);
+				}
+			}
+		}
+
+		.navbar-collapse {
+			@include transition(height .5s ease);
+			display: block;
+			height: 0;
+			visibility: hidden;
+
+			.navbar-nav {
+				display: block;
+			}
+
+			&.open {
+				@include transition(height, visibility .5s ease);
+				height: 160px;
+				visibility: visible;
+			}
 		}
 	}
 }

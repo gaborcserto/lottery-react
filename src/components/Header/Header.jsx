@@ -1,23 +1,57 @@
-import React from 'react';
-import { Navbar /*, Nav*/ } from 'react-bootstrap';
-import { FaChartBar} from "react-icons/fa";
-class Header extends React.Component {
-	render() {
-		return (
-			<Navbar bg="dark" variant="dark" fixed="top" expand="lg" className="header">
-				<Navbar.Brand href="#home"><FaChartBar /> Lottó statisztika</Navbar.Brand>
-				{/*<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="mr-auto">
-						<Nav.Link href="#home">Kezdőlap</Nav.Link>
-						<Nav.Link href="#link">Ötös lottó</Nav.Link>
-						<Nav.Link href="#link">Hatos lottó</Nav.Link>
-						<Nav.Link href="#link">Skandináv lottó</Nav.Link>
-					</Nav>
-				</Navbar.Collapse>*/}
-			</Navbar>
-		);
-	}
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Navbar , Nav } from 'react-bootstrap';
+import { FaChartBar} from 'react-icons/fa';
+
+const Header = props => {
+	const [animate, setAnimate] = useState(false);
+
+	const handleClick = () => setAnimate(!animate);
+
+	return (
+		<Navbar bg="dark" variant="dark" fixed="top" expand="md" className="header">
+			<NavLink className="navbar-brand"
+			         variant="danger"
+			         exact to="/">
+				<FaChartBar /> Lottó statisztika
+			</NavLink>
+			<button
+				onClick={handleClick}
+				type="button"
+				aria-label="Toggle navigation"
+				className={animate ? 'navbar-toggler collapsed open' : 'navbar-toggler collapsed'}>
+				<div />
+			</button>
+			<Navbar.Collapse id="basic-navbar-nav" className={animate ? 'open' : null}>
+				<Nav className="mr-auto">
+					<NavLink
+						activeClassName="active"
+						className="nav-link"
+						exact to="/">
+						Kezdőlap
+					</NavLink>
+					<NavLink
+						activeClassName="active"
+						className="nav-link"
+						to="/otos">
+						Ötös lottó
+					</NavLink>
+					<NavLink
+						activeClassName="active"
+						className="nav-link"
+						to="/hatos">
+						Hatos lottó
+					</NavLink>
+					<NavLink
+						activeClassName="active"
+						className="nav-link"
+						to="/hetes">
+						Skandináv lottó
+					</NavLink>
+				</Nav>
+			</Navbar.Collapse>
+		</Navbar>
+	);
 }
 
 export default Header;

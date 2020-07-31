@@ -1,0 +1,31 @@
+<svg id="topsvgLine" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 350" preserveAspectRatio="xMinYMax">
+                    
+	<polygon points="-150,300 7,190 250,90 550,140 800,50 1200,150 1400,80 1700,150 2200,20 2800,120 3500,10 4250,200 4700,18 5200,300" fill="url(#BglinierGradientHeaderTop)" stroke="none">
+	</polygon>
+	
+	<polyline points="-150,300 7,190 250,90 550,140 800,50 1200,150 1400,80 1700,150 2200,20 2800,120 3500,10 4250,200 4700,18 5200,300" fill="none" stroke="#93cf2c" stroke-width="2">
+	</polyline>  
+	
+	<ellipse id="topsvg_1" rx="6" ry="6" cx="-150" cy="220" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_2" rx="6" ry="6" cx="7" cy="190" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_3" rx="6" ry="6" cx="250" cy="90" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_4" rx="6" ry="6" cx="550" cy="140" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_5" rx="10" ry="10" cx="800" cy="50" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_6" rx="10" ry="10" cx="1200" cy="150" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_7" rx="10" ry="10" cx="1400" cy="80" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_8" rx="6" ry="6" cx="1700" cy="150" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_9" rx="6" ry="6" cx="2200" cy="20" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_10" rx="6" ry="6" cx="2800" cy="120" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_11" rx="6" ry="6" cx="3500" cy="10" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_12" rx="6" ry="6" cx="4250" cy="200" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_13" rx="6" ry="6" cx="4700" cy="18" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	<ellipse id="topsvg_14" rx="6" ry="6" cx="5200" cy="145" fill="#ffffff" stroke="#93cf2c" stroke-width="2"></ellipse>
+	
+	<defs>
+	  <linearGradient id="BglinierGradientHeaderTop" x1="0" y1="0" x2="0" y2="1">
+		  <stop id="BglinierGradientHeaderTopStop_1" stop-opacity="0.75" stop-color="#ffffff" offset="0"></stop>
+		  <stop id="BglinierGradientHeaderTopStop_2" stop-opacity="1" stop-color="#ffffff" offset="1"></stop>
+	  </linearGradient>
+	</defs>
+	
+</svg>

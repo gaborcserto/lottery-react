@@ -1,42 +1,33 @@
 import React from 'react';
-import {Col, ListGroup, Row, Tab} from "react-bootstrap";
+import Loading from '../../components/Loading/Loading';
+import Box from '../../components/Box';
 
-const latestLottoNumbers = props =>{
-	return (
-		<React.Fragment>
-			<h2>Korábbi nyerőszámok</h2>
-			<Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1" >
-				<Row className="latestLottoNumbers">
-					<Col sm={4}>
-						<ListGroup>
-							<ListGroup.Item action href="#link1">
-								Ötös lottó
-							</ListGroup.Item>
-							<ListGroup.Item action href="#link2">
-								Hatos lottó
-							</ListGroup.Item>
-							<ListGroup.Item action href="#link3">
-								Skandináv lottó
-							</ListGroup.Item>
-						</ListGroup>
-					</Col>
-					<Col sm={8}>
-						<Tab.Content>
-							<Tab.Pane eventKey="#link1">
-								A június 27-én kisorsolt nyerőszámok:
-							</Tab.Pane>
-							<Tab.Pane eventKey="#link2">
-								A június 28-án kisorsolt nyerőszámok:
-							</Tab.Pane>
-							<Tab.Pane eventKey="#link3">
-								A június 24-én kisorsolt nyerőszámok:
-							</Tab.Pane>
-						</Tab.Content>
-					</Col>
-				</Row>
-			</Tab.Container>
-		</React.Fragment>
-	)
+const latestLottoNumbers = ({data, type}) =>{
+	const items = [];
+	let	text = null;
+	let content = <Loading />;
+
+	const setText = (date, week) => {
+		console.log(date);
+		return (
+			<React.Fragment>
+				<h5>A {week}. héten kisorsolt nyerőszámok:</h5>
+				<small>{date}</small>
+			</React.Fragment>
+		);
+	}
+
+
+	if(data) {
+		text = setText(data.date, data.week);
+		data.numbers.map((number, index) => items.push(<div className="box__numbers__item" key={index}>{number}</div>));
+
+		content = (
+			<Box type={type} text={text} items={items} />
+		)
+	}
+
+	return content;
 }
 
 export default latestLottoNumbers;
