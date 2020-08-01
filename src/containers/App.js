@@ -55,13 +55,13 @@ const App = () => {
 				<Suspense fallback={suspense}/>
 				<Switch>
 					<Route path="/otos">
-						<LottoFivePage data={lottoFiveAllData}/>
+						<LottoFivePage data={lottoFiveAllData} type={5}/>
 					</Route>
 					<Route path="/hatos">
-						<LottoSixPage data={lottoSixAllData}/>
+						<LottoSixPage data={lottoSixAllData} type={6}/>
 					</Route>
 					<Route path="/hetes">
-						<LottoSevenPage data={lottoSevenAllData}/>
+						<LottoSevenPage data={lottoSevenAllData} type={7}/>
 					</Route>
 					<Route exact path="/">
 						<HomePage
