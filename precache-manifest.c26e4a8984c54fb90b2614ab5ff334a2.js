@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e98b5073dff6dbda0c718350e1605426",
+    "revision": "0b98dd61b30eeb977cfba2d8eacb98fb",
     "url": "/lottery-react/index.html"
   },
   {
-    "revision": "bdfeba28ccb4da45977c",
-    "url": "/lottery-react/static/css/main.2bed9b80.chunk.css"
+    "revision": "c17b763bdccecc67a970",
+    "url": "/lottery-react/static/css/main.9e6c170e.chunk.css"
   },
   {
     "revision": "c4a9543095235bc4aa74",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lottery-react/static/js/2.05c608a5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bdfeba28ccb4da45977c",
+    "revision": "c17b763bdccecc67a970",
     "url": "/lottery-react/static/js/main.15f2a6fd.chunk.js"
   },
   {
