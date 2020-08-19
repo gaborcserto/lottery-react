@@ -4,6 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 import Diagram from '../Diagram/Diagram';
 
 const statistic = ({data, type}) => {
+	let size;
 	const restructuringData = data => {
 		const numbersData = [];
 		Object.entries(data).forEach(([number, data]) =>
@@ -21,6 +22,18 @@ const statistic = ({data, type}) => {
 		return new Date(a.drawCount) - new Date(b.drawCount);
 	});
 
+	switch (type) {
+		case 7 :
+			size = 35;
+			break;
+		case 6 :
+			size = 45;
+			break;
+		case 5 :
+			size = 90
+			break;
+	}
+
 	return (
 		<React.Fragment>
 			<div>
@@ -36,7 +49,7 @@ const statistic = ({data, type}) => {
 				</Row>
 			</div>
 
-			<Diagram data={restructuringData(data)} />
+			<Diagram data={restructuringData(data)} max={desc[1].drawCount} min={asc[1].drawCount} size={size} />
 		</React.Fragment>
 	)
 }
