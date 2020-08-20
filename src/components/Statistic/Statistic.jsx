@@ -49,7 +49,7 @@ const statistic = ({data, type}) => {
 				</Row>
 			</div>
 
-			<Diagram data={restructuringData(data)} max={desc[1].drawCount} min={asc[1].drawCount} size={size} />
+			<Diagram data={restructuringData(data)} size={size} />
 		</React.Fragment>
 	)
 }

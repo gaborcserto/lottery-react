@@ -3,7 +3,10 @@ import {
 	BarChart, Bar, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
 
-const diagram = ({data, min, max, size}) => {
+const diagram = ({data, size}) => {
+	const values = data.map(obj => { return obj.drawCount; });
+	const min = Math.min(...values);
+	const max = Math.max(...values);
 
 	const round10 = number => {
 		return Math.ceil(number / 10) * 10;
@@ -12,8 +15,6 @@ const diagram = ({data, min, max, size}) => {
 	const minNumber = round10(min - 40);
 	const maxNumber = round10(max + 10);
 
-	console.log(minNumber);
-	console.log(maxNumber);
 	return (
 		<div style={{ width: '100%', height: size * 10 }}>
 			<ResponsiveContainer>
