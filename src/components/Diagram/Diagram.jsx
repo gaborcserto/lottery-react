@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-	BarChart, Bar, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
-} from 'recharts';
+import { BarChart, Bar, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 const diagram = ({data, size}) => {
 	const values = data.map(obj => { return obj.drawCount; });
@@ -26,7 +24,6 @@ const diagram = ({data, size}) => {
 					}}
 				>
 					<CartesianGrid strokeDasharray="3 3" />
-
 					<YAxis dataKey="number" type="number" domain={[0, size]}/>
 					<XAxis type="number" domain={[minNumber, maxNumber]}/>
 					<Tooltip />

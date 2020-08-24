@@ -7,7 +7,7 @@ const lottoFivePage = ({data, type}) => {
 		return (
 			<div className="main__content">
 				<h1>Ötös</h1>
-				<Statistics data={data.numberStatistics} type={type}/>
+				<Statistics data={data.numberStatistics} type={type} lotteryData={data.drawings}/>
 			</div>
 		)
 	} else {
