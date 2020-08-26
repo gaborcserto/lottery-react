@@ -81,7 +81,7 @@ const statistic = ({data, type, lotteryData}) => {
 			</div>
 
 			<Diagram data={restructuringData(data)} size={size} />
-
+			{ type>6 ? <h2>Gépi húzás</h2> : <h2>Kézi húzás</h2>}
 			<NumberStatistics  data={result[0]} position={1}/>
 			<NumberStatistics  data={result[1]} position={2}/>
 			<NumberStatistics  data={result[2]} position={3}/>
@@ -89,6 +89,14 @@ const statistic = ({data, type, lotteryData}) => {
 			<NumberStatistics  data={result[4]} position={5}/>
 			{ type>5 ? <NumberStatistics  data={result[5]} position={6}/> : null }
 			{ type>6 ? <NumberStatistics  data={result[6]} position={7}/> : null }
+			{ type>6 ? <h2>Kézi húzás</h2> : null }
+			{ type>6 ? <NumberStatistics  data={result[7]} position={1}/> : null }
+			{ type>6 ? <NumberStatistics  data={result[8]} position={2}/> : null }
+			{ type>6 ? <NumberStatistics  data={result[9]} position={3}/> : null }
+			{ type>6 ? <NumberStatistics  data={result[10]} position={4}/> : null }
+			{ type>6 ? <NumberStatistics  data={result[11]} position={5}/> : null }
+			{ type>6 ? <NumberStatistics  data={result[12]} position={6}/> : null }
+			{ type>6 ? <NumberStatistics  data={result[13]} position={7}/> : null }
 		</React.Fragment>
 	)
 }

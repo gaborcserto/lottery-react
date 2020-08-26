@@ -1,10 +1,11 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 
-const numberStatisticsTable = ({data, number}) => {
+const numberStatisticsTable = ({data}) => {
 
-	const tbody = data.slice(0, number).map((value, index) => (
+	const tbody = data.map((value, index) => (
 		<tr key={index}>
+			<td>{index + 1}</td>
 			<td>{value[0]}</td>
 			<td>{value[1]}</td>
 			<td />
@@ -17,6 +18,7 @@ const numberStatisticsTable = ({data, number}) => {
 			<thead>
 			<tr>
 				<th>#</th>
+				<th>szám</th>
 				<th>húzások száma</th>
 				<th>első húzás dátuma</th>
 				<th>utolsó húzás dátuma</th>
