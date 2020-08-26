@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/lottery-react/static/css/main.0fee8314.chunk.css",
-    "main.js": "/lottery-react/static/js/main.9d054fdb.chunk.js",
-    "main.js.map": "/lottery-react/static/js/main.9d054fdb.chunk.js.map",
+    "main.css": "/lottery-react/static/css/main.fdefe1f2.chunk.css",
+    "main.js": "/lottery-react/static/js/main.98887c30.chunk.js",
+    "main.js.map": "/lottery-react/static/js/main.98887c30.chunk.js.map",
     "runtime-main.js": "/lottery-react/static/js/runtime-main.a8cb40af.js",
     "runtime-main.js.map": "/lottery-react/static/js/runtime-main.a8cb40af.js.map",
-    "static/js/2.d28f499e.chunk.js": "/lottery-react/static/js/2.d28f499e.chunk.js",
-    "static/js/2.d28f499e.chunk.js.map": "/lottery-react/static/js/2.d28f499e.chunk.js.map",
+    "static/js/2.aea4d18e.chunk.js": "/lottery-react/static/js/2.aea4d18e.chunk.js",
+    "static/js/2.aea4d18e.chunk.js.map": "/lottery-react/static/js/2.aea4d18e.chunk.js.map",
     "index.html": "/lottery-react/index.html",
-    "precache-manifest.107a8605d7a08274222f0569f858b076.js": "/lottery-react/precache-manifest.107a8605d7a08274222f0569f858b076.js",
+    "precache-manifest.d510f4d934d15f6b525efa10c48d911d.js": "/lottery-react/precache-manifest.d510f4d934d15f6b525efa10c48d911d.js",
     "service-worker.js": "/lottery-react/service-worker.js",
-    "static/css/main.0fee8314.chunk.css.map": "/lottery-react/static/css/main.0fee8314.chunk.css.map",
-    "static/js/2.d28f499e.chunk.js.LICENSE.txt": "/lottery-react/static/js/2.d28f499e.chunk.js.LICENSE.txt",
+    "static/css/main.fdefe1f2.chunk.css.map": "/lottery-react/static/css/main.fdefe1f2.chunk.css.map",
+    "static/js/2.aea4d18e.chunk.js.LICENSE.txt": "/lottery-react/static/js/2.aea4d18e.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/lottery-react/static/media/sprite-game-logos.3a4314f2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a8cb40af.js",
-    "static/js/2.d28f499e.chunk.js",
-    "static/css/main.0fee8314.chunk.css",
-    "static/js/main.9d054fdb.chunk.js"
+    "static/js/2.aea4d18e.chunk.js",
+    "static/css/main.fdefe1f2.chunk.css",
+    "static/js/main.98887c30.chunk.js"
   ]
 }
