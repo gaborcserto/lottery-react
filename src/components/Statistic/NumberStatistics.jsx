@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Col, Row, Button} from 'react-bootstrap';
-import { FaSortNumericUp, FaSortNumericDown } from "react-icons/fa";
+import { FaSortNumericUp, FaSortNumericDown } from 'react-icons/fa';
 import NumberStatisticsTable from './NumberStatisticsTable';
 
 const NumberStatistics = ({data, position}) => {
