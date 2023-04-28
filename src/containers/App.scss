@@ -1,12 +1,12 @@
 @import "../assets/scss/colors";
 @import "../assets/scss/mixins";
 @import "../assets/scss/base";
-@import "../components/Header/Header";
-@import "../components/Footer/Footer";
-@import "../components/RandomLottoNumbers/RandomLottoNumbers";
-@import "../components/LatestLottoNumbers/LatestLottoNumbers";
-@import "../pages/ErrorPage/ErrorPage";
-@import "../components/Box";
+@import "../pages/pageParts/header";
+@import "../pages/pageParts/footer";
+@import "../components/randomLottoNumbers/randomLottoNumbers";
+@import "../components/latestLottoNumbers/latestLottoNumbers";
+@import "../pages/errorPage/errorPage";
+@import "../components/common/box";
 
 .main {
 	min-height: calc(100vh - 60px);

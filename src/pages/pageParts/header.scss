@@ -6,15 +6,16 @@
 
 	.navbar-brand {
 		color: $green-1;
+		margin-left: 10px;
 
 		&.focus,
 		&:hover,
 		&:focus {
-			color: darken($green-1,8%);
+			color: darken($green-1, 8%);
 		}
 
 		&:active {
-			color: darken($green-1,25%);
+			color: darken($green-1, 25%);
 		}
 	}
 
