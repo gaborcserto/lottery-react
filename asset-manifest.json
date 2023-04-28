@@ -1,21 +1,14 @@
 {
   "files": {
-    "main.css": "/lottery-react/static/css/main.987f94b0.chunk.css",
-    "main.js": "/lottery-react/static/js/main.dc24b4b5.chunk.js",
-    "main.js.map": "/lottery-react/static/js/main.dc24b4b5.chunk.js.map",
-    "runtime-main.js": "/lottery-react/static/js/runtime-main.6b3adcff.js",
-    "runtime-main.js.map": "/lottery-react/static/js/runtime-main.6b3adcff.js.map",
-    "static/js/2.5dc9a2fc.chunk.js": "/lottery-react/static/js/2.5dc9a2fc.chunk.js",
-    "static/js/2.5dc9a2fc.chunk.js.map": "/lottery-react/static/js/2.5dc9a2fc.chunk.js.map",
+    "main.css": "/lottery-react/static/css/main.b8077930.css",
+    "main.js": "/lottery-react/static/js/main.232d0ee4.js",
+    "static/media/sprite-game-logos.png": "/lottery-react/static/media/sprite-game-logos.d32c5dbcd9db3d78b370.png",
     "index.html": "/lottery-react/index.html",
-    "static/css/main.987f94b0.chunk.css.map": "/lottery-react/static/css/main.987f94b0.chunk.css.map",
-    "static/js/2.5dc9a2fc.chunk.js.LICENSE.txt": "/lottery-react/static/js/2.5dc9a2fc.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/lottery-react/static/media/sprite-game-logos.d32c5dbc.png"
+    "main.b8077930.css.map": "/lottery-react/static/css/main.b8077930.css.map",
+    "main.232d0ee4.js.map": "/lottery-react/static/js/main.232d0ee4.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b3adcff.js",
-    "static/js/2.5dc9a2fc.chunk.js",
-    "static/css/main.987f94b0.chunk.css",
-    "static/js/main.dc24b4b5.chunk.js"
+    "static/css/main.b8077930.css",
+    "static/js/main.232d0ee4.js"
   ]
 }
