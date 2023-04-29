@@ -22,7 +22,7 @@
 	@include media-breakpoint-down(sm) {
 		.navbar-toggler {
 			border: 0;
-			color: $green-1;
+			color: rgba(0,0,0,0);
 			float: right;
 			margin: 0;
 			outline: none;
@@ -72,6 +72,10 @@
 				@include transition(height, visibility .5s ease);
 				height: 160px;
 				visibility: visible;
+			}
+
+			.nav-link {
+				padding-left: 10px;
 			}
 		}
 	}
